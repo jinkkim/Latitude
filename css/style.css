@@ -1,0 +1,27 @@
+body {
+    background-color: rgba(158, 158, 158, 0.1);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.border-thick {
+    border-width: 5px !important;
+}
+
+.navbar-nav .nav-item.active .nav-link .navbar-nav .nav-item:hover .nav-link {
+    background-color: #bdbdbd;
+}
+
+.bg-white_ {
+    background-color: #2BBBAD;
+}
+
+@media (min-width: 992px) {
+    .bg-white_ {
+        background-color:  #ffffff;
+    }
+  }
+  
+  

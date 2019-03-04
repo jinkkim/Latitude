@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+</head>
+
+<body>
+
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white_ py-0 mb-5">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand text-white default-color font-weight-bold p-3 ml-5" href="index.html">Lattitude</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler green-text" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto mr-5">
+
+                <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Plots</a>
+            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+
+        </ul>
+        <!-- Links -->
+
+      </div>
+    
+    <!-- Collapsible content -->
+
+  </nav>
+  <!--/.Navbar-->
+
+  <div class="container">
+    <div class = "row">
+
+      <div class="m-1 p-4 bg-white col-lg-7">
+        <h2 class="header text-default">Summary: Latitude vs. X</h2>
+        <hr>
+        <div>
+          <img class="img-fluid img-thumbnail mr-2" height="auto" width="50%" align ="left" src="img/Fig1.png" alt="max temperature vs latitude">The purpose of this project was to analyze how weather changes as you get closer to or further from the equator. Weather parameters considered here are temperature, cloudiness, wind speed, and humidity.<br>
+          <p class="mt-2">To accomplish this objective, weather data were pulled from the <a href="https://openweathermap.org/api">OpenWeatherMap API</a> to assemble a dataset on over 500 cities across different latitudes. After assembling the dataset, python Matplotlib library was used to plot weather parameters vs. latitude. Finally, this visualization dashboard was created using HTML and CSS. This site provides the source data, visualizations, as well as explanations of how weather changes across latitudes on Earth.</p>
+        </div>
+      </div>
+
+      <div class="column m-1 p-4 bg-white col-lg-4">
+        <h2 class="header text-default">Visualizations</h2>
+        <hr>
+
+  
+        <div class="row p-0">
+            <div class="col-sm-6 col-md-6 col-lg-12 mx-0 px-0">
+                
+                <a href="temperature.html">
+                    <img class="img-fluid img-thumbnail mb-1" height = "auto" width="48%" img src="img/Fig1.png" alt="max temperature vs latitude">
+                  </a>
+                
+                <a href="humidity.html">
+                  <img class="img-fluid img-thumbnail mb-1"  height = "auto" width="48%" img src="img/Fig2.png" alt="humidity vs latitude">
+                </a>
+              </div>
+  
+              <div class="col-sm-6 col-md-6 col-lg-12 mx-0 px-0">
+                  <a href="cloudiness.html">
+                      <img class="img-fluid img-thumbnail mb-1"  height = "auto" width="48%" img src="img/Fig3.png" alt="cloudiness vs latitude">
+                    </a>
+                    
+                    <a href="windspeed.html">
+                      <img class="img-fluid img-thumbnail mb-1"  height = "auto" width="48%" img src="img/Fig4.png" alt="wind speed vs latitude">
+                    </a>
+
+              </div>
+        </div>
+
+
+
+      
+      </div>
+
+    </div>
+
+  </div>  
+</body>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small border-top border-default border-thick mt-5">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright
+      <a href="https://github.com/jinkkim/">Jin Kim</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+</html>
